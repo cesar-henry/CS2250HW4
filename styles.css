@@ -1,0 +1,33 @@
+.set {
+    background-color: #cad2ed;
+    border: 1px solid;
+    padding: 12px;
+    text-align: center;
+    
+    flex: 25%;
+    
+}
+
+body:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+li {
+    height: 50px;
+    width: 70px;
+    background-color: #837DA9;
+    border-style: solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: aliceblue;
+}
+
+ul {
+    list-style-type: none;  
+}
