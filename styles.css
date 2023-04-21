@@ -1,33 +1,123 @@
 .set {
     background-color: #cad2ed;
     border: 1px solid;
+    margin: 10px;
     padding: 12px;
-    text-align: center;
-    
-    flex: 25%;
-    
+    width: 21%;
+    float: left;
 }
-
-body:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 
 li {
     height: 50px;
-    width: 70px;
+    width: 100px;
     background-color: #837DA9;
     border-style: solid;
     margin: 10px;
     padding: 10px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 li:hover {
     background-color: aliceblue;
 }
 
-ul {
-    list-style-type: none;  
+#MyTitle {
+    text-align: center;
+    margin: 20px;
+}
+
+#MyFoot {
+    text-align: center;
+    margin: 20px;
+}
+
+@media only screen and (min-width: 769px) {
+
+    /* .set {
+        
+    }
+    #Adiv {
+        order: 0;
+
+    }
+    #Bdiv {
+        order: 3;
+
+    }
+    #Cdiv {
+        order: 1;
+
+    }
+    #Ddiv {
+        order: 2;
+    } */
+
+
+
+
+    .container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    #Adiv {
+        order: 0;
+    }
+
+    #Bdiv {
+        order: 3;
+    }
+
+    #Cdiv {
+        order: 1;
+    }
+    #Ddiv {
+        order: 2;
+    }
+    
+    .set {
+        width: 21%;
+        
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    
+    /* .set {
+        background-color: plum;
+        width: 40%
+    } */
+    .container {
+        /* background-color: plum; */
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .set {
+        width: 38%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        /* background-color: pink; */
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        /* background: plum; */
+        display: flex;
+        flex-direction: column;
+    }
+    .set {
+        width: 90%;
+    }
 }
